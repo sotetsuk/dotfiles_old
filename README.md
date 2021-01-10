@@ -1,6 +1,6 @@
 # dotfiles
 
-Run `./install.sh``
+Run `./install.sh`
 
 - `.gitconfig`
 - `.ideavimrc`
