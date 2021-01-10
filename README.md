@@ -1,1 +1,5 @@
 # dotfiles
+
+- `.gitconfig`
+- `.ideavimrc`
+- `.vimrc`
