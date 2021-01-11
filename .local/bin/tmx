@@ -1,3 +1,5 @@
+set -eu
+
 if [[ -z $(tmux ls) ]]; then 
     tmux; 
 else 
