@@ -1,0 +1,13 @@
+if [[ -z $(tmux ls) ]]; then 
+    tmux; 
+else 
+    if [[ -z $(which fzf) ]]; then 
+        echo "Error: fzf is not found."; 
+    else TMUX_SESSION=$(echo "New\n$(tmux ls)" | fzf | cut -d: -f1); 
+        if [[ $TMUX_SESSION = "New" ]]; then 
+            tmux; 
+        else 
+            tmux attach -t $TMUX_SESSION; 
+        fi; 
+    fi; 
+fi
