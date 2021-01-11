@@ -1,3 +1,4 @@
+#!/bin/bash
 set -eu
 
 if [[ -z $(tmux ls) ]]; then 
@@ -5,7 +6,7 @@ if [[ -z $(tmux ls) ]]; then
 else 
     if [[ -z $(which fzf) ]]; then 
         echo "Error: fzf is not found."; 
-    else TMUX_SESSION=$(echo "New\n$(tmux ls)" | fzf | cut -d: -f1); 
+    else TMUX_SESSION=$(printf "New\n$(tmux ls)" | fzf | cut -d: -f1); 
         if [[ $TMUX_SESSION = "New" ]]; then 
             tmux; 
         else 
