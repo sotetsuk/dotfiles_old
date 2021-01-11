@@ -6,6 +6,7 @@ Run `./install.sh`
 - `.gitconfig`
 - `.ideavimrc`
 - `.vimrc`
+- `.tmux.conf`
 
 ## LICENSE
 
