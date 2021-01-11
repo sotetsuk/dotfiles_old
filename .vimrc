@@ -2,6 +2,7 @@
 " Basic settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
+set encoding=utf-8
 set belloff=all
 " tab
 set tabstop=4
