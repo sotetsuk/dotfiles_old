@@ -22,6 +22,14 @@ $ zsh ./tests.sh
 ```
 
 
+## How to develop
+
+To test the new feature on local machine, use the following command.
+
+```sh
+./docker_tests_ubuntu20.04.sh
+```
+
 ## LICENSE
 
 MIT
