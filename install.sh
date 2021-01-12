@@ -12,6 +12,7 @@ dotfiles="
 .local/bin/tmx
 "
 
+mkdir -p ~/.local/bin
 for dotfile in ${dotfiles}; do
     ln -sfnv $(pwd)/${dotfile} ~/${dotfile}
 done
