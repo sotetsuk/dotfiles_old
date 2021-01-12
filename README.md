@@ -13,7 +13,7 @@ $ ./tests.sh
 **Ubungu**
 
 ```sh
-$ cat required.txt | xargs sudo apt install
+$ cat required.txt | xargs sudo apt install -y
 $ ./install.sh
 $ ./tests.sh
 ```
