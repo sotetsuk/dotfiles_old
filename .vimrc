@@ -43,6 +43,8 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 " Color theme
 Plug 'sickill/vim-monokai', {'do': 'mkdir -p ~/.vim/colors && cp ~/.vim/plugged/vim-monokai/colors/* ~/.vim/colors/'}
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
