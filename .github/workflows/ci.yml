@@ -27,12 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Pre-requirements
-        run: apt update && apt install -y git
+        run: sudo apt update && sudo apt install -y git
 
       # Runs a set of commands using the runners shell
       - name: Run install.sh
         run: |
-            cut -f 2 required.tsv | xargs apt install -y
+            cut -f 2 required.tsv | xargs sudo apt install -y
             ./install.sh
 
       - name: Run tests.sh
