@@ -3,3 +3,5 @@ vim	vim
 curl	curl
 tmux	tmux
 go	golang-go
+	python3-pip
+	python3-venv
