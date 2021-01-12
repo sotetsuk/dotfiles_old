@@ -15,7 +15,7 @@ ln -sfnv $(pwd)/.local/bin/tmx ~/.local/bin/tmx
 # zsh
 #######################################################################################################
 # install oh my zsh. This also changes default shell to zsh
-if [ ! -e ~/.oh-my-zsh ]]; then 
+if [[ ! -e ~/.oh-my-zsh ]]; then 
     yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 # if [[ -z $(echo ${SHELL} | grep zsh) ]]; then 
