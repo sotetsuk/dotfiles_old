@@ -20,7 +20,7 @@ if [[ -z $(echo ${SHELL} | grep zsh) ]]; then
 fi
 # install oh my zsh.
 if [[ ! -e ~/.oh-my-zsh ]]; then 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 # if .zshrc exists and the last line does not include .zshrc.common, include it
 touch ~/.zshrc
