@@ -1,3 +1,5 @@
+![CI](https://github.com/sotetsuk/dotfiles/workflows/CI/badge.svg)
+
 # dotfiles
 
 All dotfiles are supposed to work in both Mac and Linux. 
