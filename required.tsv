@@ -2,7 +2,7 @@ git	git
 vim	vim
 curl	curl
 tmux	tmux
-fzf	fzf
 zsh	zsh
 	python3-pip
 	python3-venv
+	locales-all
