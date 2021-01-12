@@ -10,7 +10,7 @@ $ ./install.sh
 $ zsh ./tests.sh
 ```
 
-**Ubuntu**
+**Ubuntu 20.04**
 
 ```sh
 $ sudo apt update && sudo apt install -y git
