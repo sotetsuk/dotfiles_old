@@ -51,7 +51,7 @@ call plug#end()
 " Plugin variables
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
-nmap <C-b> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeQuitOnOpen = 1
 
 " LSP
