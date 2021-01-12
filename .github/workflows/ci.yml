@@ -26,11 +26,15 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Pre-requirements
+        run: apt update && apt install -y git
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run install.sh
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+            cut -f 2 required.tsv | xargs apt install -y
+            ./install.sh
+
+      - name: Run tests.sh
+        run: |
+            zsh ./tests.sh
