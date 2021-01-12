@@ -3,7 +3,7 @@
 # dotfiles
 
 **Minimum** dotfiles to reproduce the comfortable environment.
-All dotfiles are supposed to work in both Mac and Linux. 
+All dotfiles are supposed to work in both Mac and Ubuntu. 
 
 **On Mac**
 
