@@ -7,6 +7,7 @@ All dotfiles are supposed to work in both Mac and Linux.
 ```sh
 $ cat required.txt | xargs brew install
 $ ./install.sh
+$ ./tests.sh
 ```
 
 **Ubungu**
@@ -14,6 +15,7 @@ $ ./install.sh
 ```sh
 $ cat required.txt | xargs sudo apt install
 $ ./install.sh
+$ ./tests.sh
 ```
 
 
