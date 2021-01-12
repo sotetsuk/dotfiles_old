@@ -50,6 +50,10 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin variables
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+nmap <C-b> :NERDTreeToggle<CR>
+let g:NERDTreeQuitOnOpen = 1
+
 " LSP
 let g:lsp_diagnostics_echo_cursor = 1  " show dianostics message on bar
 autocmd BufWritePre <buffer> LspDocumentFormatSync  " apply format on save
