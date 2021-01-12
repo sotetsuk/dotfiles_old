@@ -1,14 +1,16 @@
 set -eu
 
+source ~/.zshrc
+
 which git
 which vim
 which curl
 which tmux
 which fzf
-which tmx
 which python3
 which pip3
-which go
+
+which tmx
 
 echo "-------------------------------"
 echo "All tests passed!"
