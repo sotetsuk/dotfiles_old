@@ -2,7 +2,6 @@
 
 # dotfiles
 
-**Minimum** dotfiles to reproduce the comfortable environment.
 All dotfiles are supposed to work in both Mac and Ubuntu. 
 
 **On Mac**
@@ -21,6 +20,11 @@ $ cut -f 2 required.tsv | xargs sudo apt install -y
 $ ./install.sh
 $ zsh ./tests.sh
 ```
+
+## Development principles
+
+- **Maintanable**: Keep repository small and updated.
+- **Idempotent**: `./install.sh` should bring the same results even with multiple runs.
 
 ## How to develop
 
