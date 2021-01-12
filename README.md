@@ -10,7 +10,7 @@ $ ./install.sh
 $ ./tests.sh
 ```
 
-**Ubungu**
+**Ubuntu**
 
 ```sh
 $ cut -f 2 required.tsv | xargs sudo apt install -y
