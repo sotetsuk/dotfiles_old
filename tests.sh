@@ -1,5 +1,6 @@
 set -eu
 
+which git
 which vim
 which curl
 which tmux
