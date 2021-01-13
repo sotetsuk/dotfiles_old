@@ -10,6 +10,7 @@ dotfiles="
 .tmux.conf
 .zshrc.common
 .local/bin/tmx
+.local/bin/tmux-git-curr-branch
 "
 
 mkdir -p ~/.local/bin
