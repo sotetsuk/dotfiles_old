@@ -10,7 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 function cd() {
     builtin cd $1
     dir=$(pwd)
-    [[ -n "$VIRTUAL_ENV" ]] && deactivate
+    [[ -n "$VIRTUAL_ENV" ]] && which deactivate &>/dev/null && deactivate
     while true; do
         [[ -d venv ]] && source venv/bin/activate && break
         [[ $(pwd) == "/" ]] && break
