@@ -3,14 +3,18 @@ export LC_ALL=en_US.UTF-8
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Auto activation of virtualenv 
-# See https://stackoverflow.com/questions/45216663/how-to-automatically-activate-virtualenvs-when-cding-into-a-directory
+######################################################################################################
+# Auto-activate virtualenv
+######################################################################################################
+# ref) https://stackoverflow.com/questions/45216663/how-to-automatically-activate-virtualenvs-when-cding-into-a-directory
 function cd() {
     builtin cd $1
-    if [[ -d venv ]] ; then
-        if [[ -n "$VIRTUAL_ENV" ]] ; then
-            deactivate
-        fi
-        source venv/bin/activate   
-    fi 
+    dir=$(pwd)
+    [[ -n "$VIRTUAL_ENV" ]] && deactivate
+    while true; do
+        [[ -d venv ]] && source venv/bin/activate && break
+        [[ $(pwd) == "/" ]] && break
+        builtin cd ..
+    done
+    builtin cd ${dir}
 }
