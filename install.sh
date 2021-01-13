@@ -11,6 +11,7 @@ dotfiles="
 .zshrc.common
 .local/bin/tmx
 .local/bin/tmux-git-curr-branch
+.local/bin/tmux-git-status
 "
 
 mkdir -p ~/.local/bin
