@@ -59,6 +59,10 @@ let g:NERDTreeQuitOnOpen = 1
 " LSP
 let g:lsp_diagnostics_echo_cursor = 1  " show dianostics message on bar
 autocmd BufWritePre <buffer> LspDocumentFormatSync  " apply format on save
+let g:lsp_diagnostics_signs_error = {'text': '✗‣'}
+let g:lsp_diagnostics_signs_warning = {'text': ' ‣'}
+let g:lsp_diagnostics_signs_information = {'text': ' ‣'}
+let g:lsp_diagnostics_signs_hint = {'text': ' ‣'}
 
 " Color theme
 colorscheme monokai
