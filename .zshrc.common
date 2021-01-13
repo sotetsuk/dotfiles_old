@@ -18,3 +18,14 @@ function cd() {
     done
     builtin cd ${dir}
 }
+
+
+######################################################################################################
+# Zsh hooks
+######################################################################################################
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd refresh_tmux
+
+function refresh_tmux() {
+    [[ -n "$TMUX"  ]] && tmux refresh-client -S
+}
