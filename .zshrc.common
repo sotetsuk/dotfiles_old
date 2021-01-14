@@ -19,6 +19,23 @@ function cd() {
     builtin cd ${dir}
 }
 
+######################################################################################################
+# git alias
+######################################################################################################
+
+function sw() {
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+function swa() {
+  local branches branch
+  branches=$(git branch -a -vv | grep -v HEAD) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
 
 ######################################################################################################
 # Zsh hooks
@@ -29,3 +46,4 @@ add-zsh-hook precmd refresh_tmux
 function refresh_tmux() {
     [[ -n "$TMUX"  ]] && tmux refresh-client -S
 }
+
