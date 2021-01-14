@@ -32,8 +32,7 @@ jobs:
       
       - name: Install Python3
         run: |
-            brew install python 
-            brew install python-pip
+            brew upgrade python@3.9
 
       # Runs a single command using the runners shell
       - name: Install requirements
