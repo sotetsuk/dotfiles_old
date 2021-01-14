@@ -43,7 +43,7 @@ fi
 #######################################################################################################
 if [[ ! -e ~/.fzf ]]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    yes | ~/.fzf/install
+    ~/.fzf/install -all --key-bindings --completion --update-rc
 fi
 
 echo "TEST"
