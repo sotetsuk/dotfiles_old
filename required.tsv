@@ -1,9 +1,8 @@
-git	git
-vim	vim
 curl	curl
 tmux	tmux
 zsh	zsh
 bat	bat
+	vim
 	python3-pip
 	python3-venv
 	locales-all
