@@ -29,6 +29,11 @@ jobs:
       - name: Install brew
         run: |
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      
+      - name: Install Python3
+        run: |
+            brew install python 
+            brew install python-pip
 
       # Runs a single command using the runners shell
       - name: Install requirements
