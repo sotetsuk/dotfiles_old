@@ -25,18 +25,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      - name: Check python3 and pip3
+        run: |
+            which python3
+            which pip3
+
       # Runs a single command using the runners shell
       - name: Install brew
         run: |
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       
-      - name: Install Python3
-        run: |
-            brew upgrade python@3.9
-
       # Runs a single command using the runners shell
       - name: Install requirements
-        run: cut -f 1 required.tsv | xargs brew install
+        run: | 
+            export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+            cut -f 1 required.tsv | xargs brew install
 
       # Runs a set of commands using the runners shell
       - name: Run install.sh
