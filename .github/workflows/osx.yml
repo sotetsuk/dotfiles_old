@@ -27,7 +27,9 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install brew
-        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        run: |
+            chown -R $(whoami) /usr/local/lib
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
       # Runs a single command using the runners shell
       - name: Install requirements
