@@ -11,6 +11,7 @@ which curl
 which tmux
 which python3
 which pip3
+which bat
 
 # Installed w/o package manager
 which fzf
