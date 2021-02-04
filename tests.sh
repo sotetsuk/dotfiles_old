@@ -15,6 +15,7 @@ which bat
 
 # Installed w/o package manager
 which fzf
+which pyenv
 
 # Original commands
 which tmx
