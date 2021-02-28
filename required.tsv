@@ -1,4 +1,5 @@
 git	git
+git-lfs	git-lfs
 vim	vim
 curl	curl
 tmux	tmux
