@@ -6,6 +6,7 @@ set -e
 
 # Installed w/ package manager
 which git
+which git-lfs
 which vim
 which curl
 which tmux
