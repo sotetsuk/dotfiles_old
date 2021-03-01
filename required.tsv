@@ -6,7 +6,7 @@ wget	wget
 tmux	tmux
 zsh	zsh
 bat	bat
-xz	xz-utils
+xz	xz-utils	# unxz is required to install clangd language server in vim-lsp-settings
 	python3-pip
 	python3-venv
 	locales-all
