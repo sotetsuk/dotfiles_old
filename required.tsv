@@ -2,9 +2,11 @@ git	git
 git-lfs	git-lfs
 vim	vim
 curl	curl
+wget	wget	
 tmux	tmux
 zsh	zsh
 bat	bat
+xz	xz-utils
 	python3-pip
 	python3-venv
 	locales-all
