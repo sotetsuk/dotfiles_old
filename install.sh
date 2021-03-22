@@ -54,13 +54,9 @@ if [[ ! -e ~/.fzf ]]; then
     ~/.fzf/install --all --key-bindings --completion --update-rc
 fi
 
-echo "fzf install is finished!"
-
 #######################################################################################################
 # bat
 #######################################################################################################
 if [[ -z $(which bat) && -n $(which batcat) ]]; then
     ln -sfnv $(which batcat) ~/.local/bin/bat
 fi
-
-echo "bat install is finished!"
