@@ -9,10 +9,11 @@ Homebrew should be preinstalled.
 $ ./install.sh
 ```
 
-## Development principles
+## Goals
 
 - **Maintanable**: Keep repository small and updated.
-- **Idempotent**: `./install.sh` should bring the same results even with multiple runs.
+- **Idempotent**: `./install.sh` should bring the same results after multiple runs.
+- **No root permission**: No root permission is required to install.
 
 ## How to develop
 
