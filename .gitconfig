@@ -1,6 +1,8 @@
 [user]
 	name = Sotetsu KOYAMADA
 	email = koyamada-s@sys.i.kyoto-u.ac.jp
+[core]
+	editor = vi
 [alias]
 	sw = switch
 	br = branch
