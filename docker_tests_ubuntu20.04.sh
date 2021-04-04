@@ -1,2 +1,2 @@
-docker run -it --rm -v $(pwd):/dotfiles ubuntu:latest sh -c \
-    "apt update && apt install -y git && cd /dotfiles && cut -f 2 required.tsv | xargs apt install -y && ./install.sh && zsh ./tests.sh && zsh"
+docker run -it --rm -v $(pwd):/dotfiles homebrew/ubuntu20.04:latest sh -c \
+    "cd /dotfiles && ./install.sh && zsh ./tests.sh && zsh"
