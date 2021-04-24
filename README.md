@@ -3,7 +3,7 @@
 # dotfiles
 
 All dotfiles are supposed to work in both Mac and Ubuntu. 
-Homebrew should be preinstalled.
+**Homebrew** should be preinstalled.
 
 ```sh
 $ ./install.sh
