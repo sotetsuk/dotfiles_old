@@ -16,7 +16,7 @@ jobs:
 
       - name: Install requirements on Ubuntu
         if: matrix.platform == 'ubuntu-latest'
-        run: sudo apt-get update && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        run: sudo apt-get update && ./install_homebrew.sh
       
       - name: Run install.sh
         run: |
