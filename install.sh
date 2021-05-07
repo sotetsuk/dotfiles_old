@@ -77,8 +77,10 @@ if [[ ! -e ~/.fzf ]]; then
 fi
 
 echo "#############################################################################"
-echo "# imgcat and imgls"
+echo "# iterm2 utilities"
 echo "#############################################################################"
+# https://iterm2.com/documentation-utilities.html
 
-curl -o ${HOME}/.local/bin/imgcat -O https://iterm2.com/utilities/imgcat && chmod +x ${HOME}/.local/bin/imgcat
-curl -o ${HOME}/.local/bin/imgls -O https://iterm2.com/utilities/imgls && chmod +x ${HOME}/.local/bin/imgls
+for fname in imgcat imgls it2dl it2ul; do
+    curl -o ${HOME}/.local/bin/${fname} -O https://iterm2.com/utilities/${fname} && chmod +x ${HOME}/.local/bin/${fname}
+done
