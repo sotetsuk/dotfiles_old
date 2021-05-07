@@ -75,3 +75,12 @@ if [[ ! -e ~/.fzf ]]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all --key-bindings --completion --update-rc
 fi
+
+echo "#############################################################################"
+echo "# iterm2 utilities"
+echo "#############################################################################"
+# https://iterm2.com/documentation-utilities.html
+
+for fname in imgcat imgls it2dl it2ul; do
+    curl -o ${HOME}/.local/bin/${fname} -O https://iterm2.com/utilities/${fname} && chmod +x ${HOME}/.local/bin/${fname}
+done
