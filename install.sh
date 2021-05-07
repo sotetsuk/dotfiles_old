@@ -75,3 +75,10 @@ if [[ ! -e ~/.fzf ]]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all --key-bindings --completion --update-rc
 fi
+
+echo "#############################################################################"
+echo "# imgcat and imgls"
+echo "#############################################################################"
+
+curl -o ${HOME}/.local/bin/imgcat -O https://iterm2.com/utilities/imgcat && chmod +x ${HOME}/.local/bin/imgcat
+curl -o ${HOME}/.local/bin/imgls -O https://iterm2.com/utilities/imgls && chmod +x ${HOME}/.local/bin/imgls

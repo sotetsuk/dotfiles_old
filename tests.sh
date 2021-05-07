@@ -20,6 +20,8 @@ which unxz
 # Installed w/o package manager
 which fzf
 which pyenv
+which imgcat
+which imgls
 
 # Original commands
 which tmx
