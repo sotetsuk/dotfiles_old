@@ -37,7 +37,8 @@ brew install \
     zsh	\
     bat	\
     xz \
-    pre-commit
+    pre-commit \
+    gh
 
 echo "#############################################################################"
 echo "# zsh"

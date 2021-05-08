@@ -16,6 +16,7 @@ which pip3
 which bat
 which xz
 which unxz
+which gh
 
 # Installed w/o package manager
 which fzf
