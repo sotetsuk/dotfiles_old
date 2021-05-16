@@ -18,6 +18,7 @@ which bat
 which xz
 which unxz
 which gh
+which pre-commit
 
 # Installed w/o package manager
 which fzf
