@@ -33,12 +33,13 @@ brew install \
     vim	\
     curl \
     wget \
+    tree \
     tmux \
     zsh	\
     bat	\
     xz \
     pre-commit \
-    gh
+    gh \
 
 echo "#############################################################################"
 echo "# zsh"

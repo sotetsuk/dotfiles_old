@@ -10,6 +10,7 @@ which git-lfs
 which vim
 which curl
 which wget
+which tree
 which tmux
 which python3
 which pip3
