@@ -5,6 +5,7 @@ syntax on
 set number
 set encoding=utf-8
 set belloff=all
+set backspace=indent,eol,start
 " tab
 set tabstop=4
 set shiftwidth=4
