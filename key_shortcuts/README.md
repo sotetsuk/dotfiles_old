@@ -53,15 +53,15 @@
 | 検索にフォーカス |`LCmd-l`| - | xkeysnail |
 | 新しいタブ |`LCmd-t`| - | xkeysnai |
 | タブを閉じる |`LCmd-w`| - | xkeysnai |
-| タブ1へ移動 |`LCmd-1`| - | TODO |
-| タブ1へ移動 |`LCmd-2`| - | TODO |
-| タブ3へ移動 |`LCmd-3`| - | TODO |
-| タブ4へ移動 |`LCmd-4`| - | TODO |
-| タブ5へ移動 |`LCmd-5`| - | TODO |
-| タブ6へ移動 |`LCmd-6`| - | TODO |
-| タブ7へ移動 |`LCmd-7`| - | TODO |
-| タブ8へ移動 |`LCmd-8`| - | TODO |
-| タブ9へ移動 |`LCmd-9`| - | TODO |
+| タブ1へ移動 |`LCmd-1`| - | xkeysnail |
+| タブ1へ移動 |`LCmd-2`| - | xkeysnail |
+| タブ3へ移動 |`LCmd-3`| - | xkeysnail |
+| タブ4へ移動 |`LCmd-4`| - | xkeysnail |
+| タブ5へ移動 |`LCmd-5`| - | xkeysnail |
+| タブ6へ移動 |`LCmd-6`| - | xkeysnail |
+| タブ7へ移動 |`LCmd-7`| - | xkeysnail |
+| タブ8へ移動 |`LCmd-8`| - | xkeysnail |
+| タブ9へ移動 |`LCmd-9`| - | xkeysnail |
 
 ### Terminal
 
@@ -70,15 +70,15 @@
 | 検索 |`LCmd-f`| - | TODO |
 | 新しいタブ |`LCmd-t`| - | xkeysnail |
 | タブを閉じる |`LCmd-t`| - | xkeysnail |
-| タブ1へ移動 |`LCmd-1`| - | TODO |
-| タブ1へ移動 |`LCmd-2`| - | TODO |
-| タブ3へ移動 |`LCmd-3`| - | TODO |
-| タブ4へ移動 |`LCmd-4`| - | TODO |
-| タブ5へ移動 |`LCmd-5`| - | TODO |
-| タブ6へ移動 |`LCmd-6`| - | TODO |
-| タブ7へ移動 |`LCmd-7`| - | TODO |
-| タブ8へ移動 |`LCmd-8`| - | TODO |
-| タブ9へ移動 |`LCmd-9`| - | TODO |
+| タブ1へ移動 |`LCmd-1`| - | xkeysnail |
+| タブ1へ移動 |`LCmd-2`| - | xkeysnail |
+| タブ3へ移動 |`LCmd-3`| - | xkeysnail |
+| タブ4へ移動 |`LCmd-4`| - | xkeysnail |
+| タブ5へ移動 |`LCmd-5`| - | xkeysnail |
+| タブ6へ移動 |`LCmd-6`| - | xkeysnail |
+| タブ7へ移動 |`LCmd-7`| - | xkeysnail |
+| タブ8へ移動 |`LCmd-8`| - | xkeysnail |
+| タブ9へ移動 |`LCmd-9`| - | xkeysnail |
 
 
 ### コピー＆ペースト
