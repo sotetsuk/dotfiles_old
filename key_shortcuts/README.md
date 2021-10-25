@@ -16,14 +16,16 @@
 
 | 説明 | キー | Mac | Ubuntu |
 |---|:---:|:---:|:---:|
-|左へ移動 |`Ctrl-b`| - | xkeysnail |
-|右へ移動 |`Ctrl-f`| - | xkeysnail |
-|上へ移動 |`Ctrl-p`| - | xkeysnail |
-|下へ移動 |`Ctrl-n`| - | xkeysnail |
-|先頭へ移動|`Ctrl-a`| - | xkeysnail |
-|末尾へ移動|`Ctrl-e`| - | xkeysnail |
-|後ろを削除|`Ctrl-k`| - | xkeysnail |
+| 左へ移動 |`Ctrl-b`| - | xkeysnail |
+| 右へ移動 |`Ctrl-f`| - | xkeysnail |
+| 上へ移動 |`Ctrl-p`| - | xkeysnail |
+| 下へ移動 |`Ctrl-n`| - | xkeysnail |
+| 先頭へ移動|`Ctrl-a`| - | xkeysnail |
+| 末尾へ移動|`Ctrl-e`| - | xkeysnail |
+| 後ろを削除|`Ctrl-k`| - | xkeysnail |
 | Del |`Ctrl-d`| - | xkeysnail |
+| 一単語左へ移動 |`LOpt-b`| TODO | xkeysnail |
+| 一単語右へ移動 |`LOpt-f`| TODO | xkeysnail |
 
 ### アプリ・ウィンドウ操作
 
