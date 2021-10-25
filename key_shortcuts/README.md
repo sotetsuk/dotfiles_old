@@ -47,3 +47,40 @@
 | 説明 | キー | Mac | Ubuntu |
 |---|---|---|---|
 | 検索 |`LCmd-f`| - | xkeysnail |
+| 検索にフォーカス |`LCmd-l`| - | xkeysnail |
+| 新しいタブ |`LCmd-t`| - | xkeysnai |
+| タブを閉じる |`LCmd-w`| - | xkeysnai |
+| タブ1へ移動 |`LCmd-1`| - | TODO |
+| タブ1へ移動 |`LCmd-2`| - | TODO |
+| タブ3へ移動 |`LCmd-3`| - | TODO |
+| タブ4へ移動 |`LCmd-4`| - | TODO |
+| タブ5へ移動 |`LCmd-5`| - | TODO |
+| タブ6へ移動 |`LCmd-6`| - | TODO |
+| タブ7へ移動 |`LCmd-7`| - | TODO |
+| タブ8へ移動 |`LCmd-8`| - | TODO |
+| タブ9へ移動 |`LCmd-9`| - | TODO |
+
+### Terminal
+
+| 説明 | キー | Mac | Ubuntu |
+|---|---|---|---|
+| 検索 |`LCmd-f`| - | TODO |
+| 新しいタブ |`LCmd-t`| - | xkeysnail |
+| タブを閉じる |`LCmd-t`| - | xkeysnail |
+| タブ1へ移動 |`LCmd-1`| - | TODO |
+| タブ1へ移動 |`LCmd-2`| - | TODO |
+| タブ3へ移動 |`LCmd-3`| - | TODO |
+| タブ4へ移動 |`LCmd-4`| - | TODO |
+| タブ5へ移動 |`LCmd-5`| - | TODO |
+| タブ6へ移動 |`LCmd-6`| - | TODO |
+| タブ7へ移動 |`LCmd-7`| - | TODO |
+| タブ8へ移動 |`LCmd-8`| - | TODO |
+| タブ9へ移動 |`LCmd-9`| - | TODO |
+
+
+### コピー＆ペースト
+
+| 説明 | キー | Mac | Ubuntu |
+|---|---|---|---|
+| コピー |`Cmd-C`| - | xkeysnail |
+| ペースト |`Cmd-V`| - | xkeysnail |
