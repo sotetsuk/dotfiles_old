@@ -1,4 +1,5 @@
 #! /bin/bash
+set -eu
 
 echo "#############################################################################"
 echo "# Set dotfiles"
@@ -24,14 +25,15 @@ echo "##########################################################################
 echo "# Brew install"
 echo "#############################################################################"
 
+# check pre-requirements
 which brew
+which git
+which curl
 
 # xz is required to install clangd language server in vim-lsp-settings
 brew install \
     git \
-    git-lfs	\
     vim	\
-    curl \
     wget \
     tree \
     tmux \
@@ -40,7 +42,6 @@ brew install \
     xz \
     pre-commit \
     gh \
-    pre-commit
 
 echo "#############################################################################"
 echo "# zsh"
