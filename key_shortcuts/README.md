@@ -29,9 +29,10 @@
 
 | 説明 | キー | Mac | Ubuntu |
 |---|---|---|---|
-| 最大化 | `Ctrl-LCmd-M` | BetterSnapTool | Settings->Keyboard Shortcuts|
-| 左半分 | `Ctrl-LCmd-L` | BetterSnapTool | Settings->Keyboard Shortcuts|
-| 右半分 | `Ctrl-LCmd-R` | BetterSnapTool | Settings->Keyboard Shortcuts|
+| Full screen | `Ctrl-LCmd-f` | TODO | Settings->Keyboard Shortcuts |
+| 最大化 | `Ctrl-LCmd-M` | BetterSnapTool | Settings->Keyboard Shortcuts |
+| 左半分 | `Ctrl-LCmd-L` | BetterSnapTool | Settings->Keyboard Shortcuts |
+| 右半分 | `Ctrl-LCmd-R` | BetterSnapTool | Settings->Keyboard Shortcuts |
 | ウィンドウを閉じる | `Ctrl-W` | - | TODO |
 | アプリを閉じる | `Ctrl-Q` | - | TODO |
 | アプリの切り替え | `LCmd+Tab` | - | Settings->Keyboard Shortcuts | 
