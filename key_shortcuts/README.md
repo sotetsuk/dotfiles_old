@@ -51,6 +51,7 @@
 |---|---|---|---|
 | 検索 |`LCmd-f`| - | xkeysnail |
 | 検索にフォーカス |`LCmd-l`| - | xkeysnail |
+| 検索にフォーカス |`RCmd-l`| - | xkeysnail |
 | 新しいタブ |`LCmd-t`| - | xkeysnai |
 | タブを閉じる |`LCmd-w`| - | xkeysnai |
 | タブ1へ移動 |`LCmd-1`| - | xkeysnail |

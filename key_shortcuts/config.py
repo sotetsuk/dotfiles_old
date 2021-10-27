@@ -71,10 +71,11 @@ define_keymap(lambda wm_class: True, {
     # ;:
     K("RCtrl-enter"): K("semicolon"),
     K("RCtrl-J"): K("semicolon"),
+    K("RCtrl-LShift-J"): K("LShift-semicolon"),
     # K("RCtrl-LShift-P"): K("LShift-semicolon"),
     # '"
-    K("RCtrl-L"): K("apostrophe"),
-    K("RCtrl-LShift-L"): K("LShift-apostrophe"),
+    K("RCtrl-K"): K("apostrophe"),
+    K("RCtrl-LShift-K"): K("LShift-apostrophe"),
     # /?
     # K("RCtrl-L"): K("slash"),
     # K("RCtrl-LShift-L"): K("LShift-slash"),
@@ -161,14 +162,13 @@ define_keymap(lambda wm_class: True,
 # These bindings have a conflict with editors.
 define_keymap(lambda wm_class: wm_class not in (
     "Gnome-terminal",
-    "Code",
-    "jetbrains-pycharm",
-    "jetbrains-clion"
-), {
+    "Code", "jetbrains-pycharm", "jetbrains-clion"), {
     # Kill line
     K("C-k"): [K("Shift-end"), K("C-x"), set_mark(False)],
     # Delete
     K("C-d"): [K("delete"), set_mark(False)],
+    # Select all
+    K("LSuper-a"): [K("C-a"), set_mark(True)],
 }, "Emacs-like-exceptions")
 
 
@@ -188,6 +188,7 @@ define_keymap(lambda wm_class: wm_class in ("Gnome-terminal",),
 define_keymap(re.compile("Firefox|Google-chrome"), {
     K("LSuper-f"): K("C-f"),
     K("LSuper-l"): K("C-l"),
+    K("RCtrl-l"): K("C-l"),
     K("LSuper-t"): K("C-t"),
     K("LSuper-w"): K("C-w"),
     K("LSuper-r"): K("C-r"),
@@ -243,3 +244,12 @@ define_keymap(lambda wm_class: True,
                   K("LCtrl-LSuper-key_8"): K("Super-key_8"),
                   K("LCtrl-LSuper-key_9"): K("Super-key_9"),
               })
+
+# CLion/PyCharm
+define_keymap(lambda wm_class: wm_class in (
+    "jetbrains-pycharm", "jetbrains-clion"), {
+    # Toggle Terminal
+    K("LCtrl-grave"): [K("M-F12"), K("M-F12")],
+    # Toggle Side Bar (Files)
+    K("LSuper-b"): [K("M-KEY_1"), K("M-KEY_1")],
+})
