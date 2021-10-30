@@ -89,17 +89,17 @@ define_keymap(lambda wm_class: True, {
 define_keymap(lambda wm_class: True,
               {
                   # Cursor
-                  K("C-b"): with_mark(K("left")),
-                  K("C-f"): with_mark(K("right")),
-                  K("C-p"): with_mark(K("up")),
-                  K("C-n"): with_mark(K("down")),
-                  K("C-h"): with_mark(K("backspace")),
+                  K("C-b"): K("left"),
+                  K("C-f"): K("right"),
+                  K("C-p"): K("up"),
+                  K("C-n"): K("down"),
+                  K("C-h"): K("backspace"),
                   # Beginning/End of line
-                  K("C-a"): with_mark(K("home")),
-                  K("C-e"): with_mark(K("end")),
+                  K("C-a"): K("home"),
+                  K("C-e"): K("end"),
                   # Forward/Backward word
-                  K("M-b"): with_mark(K("C-left")),
-                  K("M-f"): with_mark(K("C-right")),
+                  K("M-b"): K("C-left"),
+                  K("M-f"): K("C-right"),
                   # # Kill line
                   # K("C-k"): [K("Shift-end"), K("C-x"), set_mark(False)],
                   # # Delete
