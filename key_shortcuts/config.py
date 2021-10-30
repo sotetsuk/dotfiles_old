@@ -252,4 +252,6 @@ define_keymap(lambda wm_class: wm_class in (
     K("LCtrl-grave"): [K("M-F12"), K("M-F12")],
     # Toggle Side Bar (Files)
     K("LSuper-b"): [K("M-KEY_1"), K("M-KEY_1")],
+    # Close tab
+    K("LSuper-w"): [K("LCtrl-F4"), K("LCtrl-F4")],
 })
