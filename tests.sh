@@ -19,6 +19,7 @@ which xz
 which unxz
 which gh
 which pre-commit
+which xsel
 
 # Installed w/o package manager
 which fzf
