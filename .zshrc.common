@@ -41,16 +41,16 @@ function cd() {
 # git alias
 ######################################################################################################
 
-function sw() {
+function gs() {
   local branches branch
   branches=$(git branch -vv) &&
   branch=$(echo "$branches" | fzf +m) &&
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
-function swa() {
+function gsa() {
   local branches branch
-  branches=$(git branch -a -vv | grep -v HEAD) &&
+  branches=$(git branch -a -vv | grep -v HEAD | sed "s/remotes\/origin\///g") &&
   branch=$(echo "$branches" | fzf +m) &&
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
