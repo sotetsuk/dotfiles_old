@@ -66,16 +66,16 @@ define_keymap(lambda wm_class: True, {
     K("RCtrl-I"): K("right_brace"),
     K("RCtrl-LShift-I"): K("LShift-right_brace"),
     # \|
-    K("RCtrl-O"): K("backslash"),
-    K("RCtrl-LShift-O"): K("LShift-backslash"),
+    K("RCtrl-Y"): K("backslash"),
+    K("RCtrl-E"): K("LShift-backslash"),
     # ;:
     K("RCtrl-enter"): K("semicolon"),
     K("RCtrl-J"): K("semicolon"),
     K("RCtrl-LShift-J"): K("LShift-semicolon"),
     # K("RCtrl-LShift-P"): K("LShift-semicolon"),
     # '"
-    K("RCtrl-K"): K("apostrophe"),
-    K("RCtrl-LShift-K"): K("LShift-apostrophe"),
+    K("RCtrl-P"): K("apostrophe"),
+    K("RCtrl-O"): K("LShift-apostrophe"),
     # /?
     # K("RCtrl-L"): K("slash"),
     # K("RCtrl-LShift-L"): K("LShift-slash"),
