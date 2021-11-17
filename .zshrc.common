@@ -55,6 +55,24 @@ function gsa() {
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
+function gsm() {
+  if [[ $(git branch | grep master) ]]; then
+    git checkout master
+  else
+    git checkout main
+  fi
+}
+
+function gpl() {
+  br=$(git branch | grep "*" | awk '{print $2}')
+  git pull origin $br
+} 
+
+function gps() {
+  br=$(git branch | grep "*" | awk '{print $2}')
+  git push -f origin $br
+}
+
 ######################################################################################################
 # Zsh hooks
 ######################################################################################################
