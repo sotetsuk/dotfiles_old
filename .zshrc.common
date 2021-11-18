@@ -63,6 +63,14 @@ function gsm() {
   fi
 }
 
+function gst() {
+  git status
+}
+
+function gcm() {
+  git commit
+}
+
 function gpl() {
   br=$(git branch | grep "*" | awk '{print $2}')
   git pull origin $br
