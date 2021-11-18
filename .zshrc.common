@@ -67,9 +67,7 @@ function gst() {
   git status
 }
 
-function gcm() {
-  git commit
-}
+alias gcm="git commit -m"
 
 function gpl() {
   br=$(git branch | grep "*" | awk '{print $2}')
