@@ -63,12 +63,6 @@ function gsm() {
   fi
 }
 
-function gst() {
-  git status
-}
-
-alias gcm="git commit -m"
-
 function gpl() {
   br=$(git branch | grep "*" | awk '{print $2}')
   git pull origin $br
@@ -78,6 +72,12 @@ function gps() {
   br=$(git branch | grep "*" | awk '{print $2}')
   git push -f origin $br
 }
+
+alias gst="git status"
+
+alias gcm="git commit -m"
+
+alias ga="git add"
 
 ######################################################################################################
 # Zsh hooks
