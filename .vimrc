@@ -69,5 +69,5 @@ let g:lsp_diagnostics_signs_information = {'text': ' ‣'}
 let g:lsp_diagnostics_signs_hint = {'text': ' ‣'}
 
 " Color theme
-colorscheme monokai
+silent! colorscheme monokai
 
