@@ -44,18 +44,6 @@ brew install \
     xsel
 
 echo "#############################################################################"
-echo "# zsh"
-echo "#############################################################################"
-
-# if .zshrc exists and the last line does not include .zshrc.common, include it
-touch ~/.zshrc
-if [[ -z $(cat ~/.zshrc | grep "source ~/.zshrc.common") ]];  then
-    echo "" >> ~/.zshrc;
-    echo "# Automatically added" >> ~/.zshrc;
-    echo "source ~/.zshrc.common" >> ~/.zshrc; 
-fi 
-
-echo "#############################################################################"
 echo "# fzf"
 echo "#############################################################################"
 
@@ -72,3 +60,15 @@ echo "##########################################################################
 for fname in imgcat imgls it2dl it2ul; do
     curl -o ${HOME}/.local/bin/${fname} -O https://iterm2.com/utilities/${fname} && chmod +x ${HOME}/.local/bin/${fname}
 done
+
+echo "#############################################################################"
+echo "# zsh"
+echo "#############################################################################"
+
+# if .zshrc exists and the last line does not include .zshrc.common, include it
+touch ~/.zshrc
+if [[ -z $(cat ~/.zshrc | grep "source ~/.zshrc.common") ]];  then
+    echo "" >> ~/.zshrc;
+    echo "# Automatically added" >> ~/.zshrc;
+    echo "source ~/.zshrc.common" >> ~/.zshrc; 
+fi 
