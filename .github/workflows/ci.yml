@@ -14,14 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install requirements on Ubuntu
-        if: matrix.platform == 'ubuntu-latest'
-        run: ./installers/install_homebrew.sh
-      
-      - name: install zsh and oh-my-zsh (if not exists)
-        run: |
-            ./installers/install_zsh.sh
-      
       - name: Run install.sh
         run: |
             ./install.sh
