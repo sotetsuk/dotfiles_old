@@ -3,8 +3,8 @@ set -eu
 
 if [[ ! $(which zsh) ]]; then
     # install zsh
-    apt update
-    apt install -y zsh
+    sudo apt update
+    sudo apt install -y zsh
 fi
 
 # install oh my zsh.
