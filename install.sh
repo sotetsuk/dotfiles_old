@@ -71,3 +71,6 @@ if [[ -z $(cat ~/.zshrc | grep "source ~/.zshrc.common") ]];  then
     echo "source ~/.zshrc.common" >> ~/.zshrc; 
 fi 
 
+
+
+./installers/install_vim_lsp.sh
