@@ -61,7 +61,8 @@ let g:NERDTreeQuitOnOpen = 1
 
 " LSP
 let g:lsp_diagnostics_echo_cursor = 1  " show dianostics message on bar
-autocmd BufWritePre <buffer> LspDocumentFormatSync  " apply format on save
+" autocmd BufWritePre <buffer> LspDocumentFormatSync  " apply format on save
+:command F LspDocumentFormatSync  " alias for applying format
 let g:lsp_diagnostics_signs_error = {'text': '✗‣'}
 let g:lsp_diagnostics_signs_warning = {'text': ' ‣'}
 let g:lsp_diagnostics_signs_information = {'text': ' ‣'}
