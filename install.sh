@@ -2,12 +2,18 @@
 set -eu
 
 echo "#############################################################################"
+echo "# Check requirements"
+echo "#############################################################################"
+
+which git
+which curl
+
+echo "#############################################################################"
 echo "# Run installers"
 echo "#############################################################################"
 
 ./installers/install_essentials.sh
 ./installers/install_zsh.sh
-./installers/install_homebrew.sh
 
 echo "#############################################################################"
 echo "# Set dotfiles"
@@ -30,29 +36,10 @@ for dotfile in ${dotfiles}; do
 done
 
 echo "#############################################################################"
-echo "# Brew install"
+echo "# Brew"
 echo "#############################################################################"
 
-# TODO: remove me
-if [[ -e "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
-# check pre-requirements
-which brew
-which git
-which curl
-
-# xz is required to install clangd language server in vim-lsp-settings
-brew install \
-    vim	\
-    wget \
-    tree \
-    tmux \
-    bat	\
-    xz \
-    pre-commit \
-    gh \
-    xsel
+./installers/install_brew.sh
 
 echo "#############################################################################"
 echo "# fzf"
