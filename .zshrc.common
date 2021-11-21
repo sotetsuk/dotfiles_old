@@ -34,14 +34,7 @@ function cd() {
 # git alias
 ######################################################################################################
 
-function gs() {
-  local branches branch
-  branches=$(git branch -vv) &&
-  branch=$(echo "$branches" | fzf +m) &&
-  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-}
-
-function gsa() {
+function gsw() {
   local branches branch
   branches=$(git branch -a -vv | grep -v HEAD | sed "s/remotes\/origin\///g") &&
   branch=$(echo "$branches" | fzf +m) &&
@@ -72,7 +65,7 @@ alias gst="git status"
 
 alias gcm="git commit -m"
 
-alias ga="git add"
+alias gad="git add"
 
 alias gg="git grep"
 
