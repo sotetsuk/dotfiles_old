@@ -23,7 +23,6 @@ which xsel
 
 # Installed w/o package manager
 which fzf
-which pyenv
 which imgcat
 which imgls
 which it2dl
