@@ -64,7 +64,9 @@ alias gcm="git commit -m"
 
 alias gad="git add"
 
-alias gg="git grep"
+alias gdf="git diff"
+
+alias ggrep="git grep"
 
 ######################################################################################################
 # Zsh hooks
