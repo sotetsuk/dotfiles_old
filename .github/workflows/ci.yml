@@ -16,7 +16,7 @@ jobs:
 
       - name: Install requirements on Ubuntu
         if: matrix.platform == 'ubuntu-latest'
-        run: ./install_homebrew.sh
+        run: ./installers/install_homebrew.sh
       
       - name: Run install.sh
         run: |
