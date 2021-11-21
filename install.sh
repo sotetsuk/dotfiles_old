@@ -6,8 +6,8 @@ echo "# Run installers"
 echo "#############################################################################"
 
 ./installers/install_essentials.sh
-./installers/install_homebrew.sh
 ./installers/install_zsh.sh
+./installers/install_homebrew.sh
 
 echo "#############################################################################"
 echo "# Set dotfiles"

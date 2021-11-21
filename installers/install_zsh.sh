@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 set -eu
 
 if [[ ! $(which zsh) ]]; then
