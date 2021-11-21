@@ -79,3 +79,9 @@ if [[ -z $(cat ~/.zshrc | grep "source ~/.zshrc.common") ]];  then
     echo "# Automatically added" >> ~/.zshrc;
     echo "source ~/.zshrc.common" >> ~/.zshrc; 
 fi 
+
+echo "#############################################################################"
+echo "# Install vim langauge servers"
+echo "#############################################################################"
+
+./installers/install_vim_lsp.sh
