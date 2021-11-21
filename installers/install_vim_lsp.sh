@@ -4,7 +4,7 @@ set -eu
 vim -c ":PlugInstall" -c "qa!"
 
 mkdir -p ~/.local/share/vim-lsp-settings/servers
-for LANG_SERVER in "pyls-all" "clangd"; do
+for LANG_SERVER in "pylsp-all" "clangd"; do
   cd ~/.local/share/vim-lsp-settings/servers
   if [[ -d ${LANG_SERVER} ]]; then
     echo "passed [${LANG_SERVER}]"
