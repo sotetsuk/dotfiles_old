@@ -4,6 +4,7 @@ set -eu
 if command -v zsh 1>/dev/null 2>&1; then
   echo "passed [zsh]"
 else
+  # TODO: remove sudo
   # install zsh
   sudo apt update
   sudo apt install -y zsh
