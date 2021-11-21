@@ -4,7 +4,7 @@ set -eu
 # on ubuntu
 OS="$(uname)"
 if [[ "${OS}" == "Linux" ]]; then
-    sudo apt update && sudo apt update install -y build build-essential git curl
+    sudo apt update -y && sudo apt install -y build build-essential git curl
 fi
 
 # ensure essentials
