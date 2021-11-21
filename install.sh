@@ -33,6 +33,10 @@ echo "##########################################################################
 echo "# Brew install"
 echo "#############################################################################"
 
+# TODO: remove me
+if [[ -e "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 # check pre-requirements
 which brew
 which git
