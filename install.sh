@@ -5,14 +5,14 @@ echo "##########################################################################
 echo "# Check requirements"
 echo "#############################################################################"
 
-which git
-which curl
+which git &>/dev/null
+which curl &>/dev/null
+echo "ok"
 
 echo "#############################################################################"
-echo "# Run installers"
+echo "# zsh"
 echo "#############################################################################"
 
-./installers/install_essentials.sh
 ./installers/install_zsh.sh
 
 echo "#############################################################################"
@@ -48,6 +48,8 @@ echo "##########################################################################
 if [[ ! -e ~/.fzf ]]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all --key-bindings --completion --update-rc
+else
+    echo "passed [fzf]"
 fi
 
 echo "#############################################################################"
@@ -56,11 +58,15 @@ echo "##########################################################################
 # https://iterm2.com/documentation-utilities.html
 
 for fname in imgcat imgls it2dl it2ul; do
-    curl -o ${HOME}/.local/bin/${fname} -O https://iterm2.com/utilities/${fname} && chmod +x ${HOME}/.local/bin/${fname}
+  if [[ -e ${HOME}/.local/bin/${fname} ]]; then
+    echo "passed [${fname}]"
+    continue
+  fi
+  curl -o ${HOME}/.local/bin/${fname} -O https://iterm2.com/utilities/${fname} && chmod +x ${HOME}/.local/bin/${fname}
 done
 
 echo "#############################################################################"
-echo "# zsh"
+echo "# .zshrc"
 echo "#############################################################################"
 
 # if .zshrc exists and the last line does not include .zshrc.common, include it
@@ -69,8 +75,6 @@ if [[ -z $(cat ~/.zshrc | grep "source ~/.zshrc.common") ]];  then
     echo "" >> ~/.zshrc;
     echo "# Automatically added" >> ~/.zshrc;
     echo "source ~/.zshrc.common" >> ~/.zshrc; 
+else
+    echo "passed [.zshrc]"
 fi 
-
-
-
-./installers/install_vim_lsp.sh
