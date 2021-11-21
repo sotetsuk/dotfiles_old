@@ -73,6 +73,8 @@ function gps() {
   git push -f origin $br
 }
 
+alias gco="git checkout"
+
 alias gst="git status"
 
 alias gcm="git commit -m"
