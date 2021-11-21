@@ -40,7 +40,6 @@ which curl
 
 # xz is required to install clangd language server in vim-lsp-settings
 brew install \
-    git \
     vim	\
     wget \
     tree \

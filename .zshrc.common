@@ -77,8 +77,8 @@ function refresh_tmux() {
 # Clipboard
 ######################################################################################################
 
-if [[ $(which pbcopy) ]]; then
-    alias C="pbcopy"
-else
+if [[ -z $(which pbcopy) ]]; then
     alias C="xsel -bi"
+else
+    alias C="pbcopy"
 fi

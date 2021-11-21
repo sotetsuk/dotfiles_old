@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-if [[ ! $(which zsh) ]]; then
+if [[ -z $(which zsh) ]]; then
     # install zsh
     sudo apt update
     sudo apt install -y zsh
