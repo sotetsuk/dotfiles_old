@@ -1,4 +1,4 @@
-![ci](https://github.com/sotetsuk/dotfiles/workflows/CI/badge.svg)
+[![ci](https://github.com/sotetsuk/dotfiles/actions/workflows/ci.yml/badge.svg)](https://github.com/sotetsuk/dotfiles/actions/workflows/ci.yml)
 
 # dotfiles
 
