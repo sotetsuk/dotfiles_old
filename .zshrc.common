@@ -64,7 +64,7 @@ alias gcm="git commit -m"
 
 alias gad="git add"
 
-alias gdf="git diff"
+alias gif="git diff"
 
 alias ggrep="git grep"
 
