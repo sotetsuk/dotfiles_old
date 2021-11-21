@@ -8,7 +8,12 @@ else
         echo "Error: fzf is not found."; 
     else TMUX_SESSION=$(printf "New\n$(tmux ls)" | fzf | cut -d: -f1); 
         if [[ $TMUX_SESSION = "New" ]]; then 
-            tmux; 
+            echo "Session name? [default=timestamp]"
+            read SESSION_NAME
+            if [[ ${SESSION_NAME} -eq "" ]]; then
+                SESSION_NAME=$(date +%Y-%m-%dT%H:%M:%S)
+            fi
+            tmux new -s ${SESSION_NAME}; 
         else 
             tmux attach -t $TMUX_SESSION; 
         fi; 
