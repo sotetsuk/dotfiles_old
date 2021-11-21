@@ -19,6 +19,7 @@ function cd() {
     [[ -n "$VIRTUAL_ENV" ]] && which deactivate &>/dev/null && deactivate
     while true; do
         [[ -d venv ]] && source venv/bin/activate && break
+        [[ -d .venv ]] && source .venv/bin/activate && break
         [[ $(pwd) == "/" ]] && break
         builtin cd ..
     done
