@@ -12,6 +12,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # Auto-activate virtualenv
 ######################################################################################################
 # ref) https://stackoverflow.com/questions/45216663/how-to-automatically-activate-virtualenvs-when-cding-into-a-directory
+
 function cd() {
     builtin cd $1
     dir=$(pwd)
@@ -23,6 +24,7 @@ function cd() {
     done
     builtin cd ${dir}
 }
+cd .
 
 ######################################################################################################
 # git alias
