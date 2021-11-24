@@ -62,9 +62,12 @@ alias gst="git status"
 alias gcm="git commit -m"
 
 alias gad="git add"
+alias gadd="git add"
 
 alias gdif="git diff"
+alias gdiff="git diff"
 
+alias ggre="git grep"
 alias ggrep="git grep"
 
 ######################################################################################################
