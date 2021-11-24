@@ -31,7 +31,7 @@ cd .
 # git alias
 ######################################################################################################
 
-function gsw() {
+function gs() {
   local branches branch
   branches=$(git branch -a -vv | grep -v HEAD | sed "s/remotes\/origin\///g") &&
   branch=$(echo "$branches" | fzf +m) &&
@@ -64,7 +64,7 @@ alias gcm="git commit -m"
 
 alias gad="git add"
 
-alias gif="git diff"
+alias gdif="git diff"
 
 alias ggrep="git grep"
 
