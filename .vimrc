@@ -50,6 +50,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'sickill/vim-monokai', {'do': 'mkdir -p ~/.vim/colors && cp ~/.vim/plugged/vim-monokai/colors/* ~/.vim/colors/'}
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
