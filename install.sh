@@ -56,9 +56,9 @@ echo "##########################################################################
 echo "# poetry"
 echo "#############################################################################"
 if command -v poetry 1>/dev/null 2>&1; then
-    curl -sSL https://install.python-poetry.org | python3 -
-else
     echo "passed [poetry]"
+else
+    curl -sSL https://install.python-poetry.org | python3 -
 fi
 
 echo "#############################################################################"
