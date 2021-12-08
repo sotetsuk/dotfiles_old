@@ -6,7 +6,6 @@ set -e
 
 # Installed w/ package manager
 which git
-which git-lfs
 which vim
 which curl
 which wget
@@ -23,6 +22,7 @@ which xsel
 
 # Installed w/o package manager
 which fzf
+which poetry
 which imgcat
 which imgls
 which it2dl
