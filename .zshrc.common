@@ -52,7 +52,7 @@ function gpl() {
 
 function gps() {
   br=$(git branch | grep "*" | awk '{print $2}')
-  git push -f origin $br
+  git push -u origin $br
 }
 
 alias gco="git checkout"
