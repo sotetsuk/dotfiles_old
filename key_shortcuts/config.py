@@ -5,6 +5,15 @@ from xkeysnail.transform import \
     define_timeout, define_modmap, define_keymap, \
     Key, K, with_mark, set_mark
 
+
+def launch(command):
+    """Launch command"""
+    def launcher():
+        from subprocess import Popen
+        Popen(command, shell=True)
+    return launcher
+
+
 # define timeout for multipurpose_modmap
 define_timeout(0.05)
 
@@ -181,6 +190,12 @@ define_keymap(lambda wm_class: wm_class in ("Gnome-terminal",),
     K("LSuper-c"): K("Ctrl-LShift-c"),
     K("LSuper-v"): K("Ctrl-LShift-v"),
 })
+
+# Mac-like Screen shots
+define_keymap(lambda wm_class: True,
+              {
+                  K("C-LSuper-LShift-key_4"): launch("gnome-screenshot -ac")
+              }, "Screenshots")
 
 # Keybindings for Firefox/Chrome
 define_keymap(re.compile("Firefox|Google-chrome"), {
