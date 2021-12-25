@@ -39,8 +39,8 @@ endif
 " Manage plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'cohama/lexima.vim'
+" Plug 'cohama/lexima.vim'
+Plug 'jiangmiao/auto-pairs'
 " LSP and auto-completion
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
