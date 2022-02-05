@@ -8,17 +8,17 @@ set -e
 which git
 which vim
 which curl
-which wget
-which tree
+# which wget
+# which tree
 which tmux
 which python3
 which pip3
-which bat
-which xz
-which unxz
-which gh
-which pre-commit
-which xsel
+# which bat
+# which xz
+# which unxz
+# which gh
+# which pre-commit
+# which xsel
 
 # Installed w/o package manager
 which fzf

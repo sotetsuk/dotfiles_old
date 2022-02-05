@@ -23,13 +23,9 @@ fi
 # install packages using brew
 # xz is required to install clangd language server in vim-lsp-settings
 brew install \
-    vim	\
-    wget \
-    tree \
     tmux \
     bat	\
     xz \
-    pre-commit \
     gh \
     xsel
 
