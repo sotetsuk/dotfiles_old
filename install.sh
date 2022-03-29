@@ -13,7 +13,7 @@ echo "##########################################################################
 echo "# zsh"
 echo "#############################################################################"
 
-# ./installers/install_zsh.sh
+./installers/install_zsh.sh
 
 echo "#############################################################################"
 echo "# Set dotfiles"
@@ -52,7 +52,7 @@ echo "##########################################################################
 if command -v poetry 1>/dev/null 2>&1; then
     echo "passed [poetry]"
 else
-    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+    curl -sSL https://install.python-poetry.org | python3 -
 fi
 
 echo "#############################################################################"
