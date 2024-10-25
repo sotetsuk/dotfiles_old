@@ -20,6 +20,7 @@ which xsel
 which pygmentize
 
 # Installed w/o package manager
+which uv
 which fzf
 which imgcat
 which imgls
