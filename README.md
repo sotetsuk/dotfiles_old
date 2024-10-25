@@ -5,7 +5,7 @@
 All dotfiles are supposed to work in both Mac and Ubuntu. 
 
 ```sh
-$ ./pre-install.sh
+$ ./pre-install.sh  # only on ubuntu
 $ ./install.sh
 ```
 
