@@ -47,15 +47,6 @@ else
 fi
 
 echo "#############################################################################"
-echo "# poetry"
-echo "#############################################################################"
-if command -v poetry 1>/dev/null 2>&1; then
-    echo "passed [poetry]"
-else
-    curl -sSL https://install.python-poetry.org | python3 -
-fi
-
-echo "#############################################################################"
 echo "# iterm2 utilities"
 echo "#############################################################################"
 # https://iterm2.com/documentation-utilities.html
