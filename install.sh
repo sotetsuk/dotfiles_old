@@ -76,7 +76,7 @@ echo "# iterm2 utilities"
 echo "#############################################################################"
 # https://iterm2.com/documentation-utilities.html
 
-for fname in imgcat imgls it2dl it2ul; do
+for fname in imgcat it2dl it2ul; do
   if [[ -e ${HOME}/.local/bin/${fname} ]]; then
     echo "passed [${fname}]"
     continue

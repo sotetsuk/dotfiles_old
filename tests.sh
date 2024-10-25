@@ -23,7 +23,6 @@ which pygmentize
 which uv
 which fzf
 which imgcat
-which imgls
 which it2dl
 which it2ul
 
