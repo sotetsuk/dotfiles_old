@@ -16,6 +16,7 @@ jobs:
 
       - name: Run install.sh
         run: |
+            ./pre-install.sh
             ./install.sh
 
       - name: Run tests.sh
