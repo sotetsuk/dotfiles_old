@@ -13,18 +13,18 @@ export PATH="$HOME/.local/bin:$PATH"
 ##########################################
 # ref) https://stackoverflow.com/questions/45216663/how-to-automatically-activate-virtualenvs-when-cding-into-a-directory
 
-function cd() {
-    builtin cd $1
-    dir=$(pwd)
-    [[ -n "$VIRTUAL_ENV" ]] && which deactivate &>/dev/null && deactivate
-    while true; do
-        [[ -d venv ]] && source venv/bin/activate && break
-        [[ -d .venv ]] && source .venv/bin/activate && break
-        [[ $(pwd) == "/" ]] && break
-        builtin cd ..
-    done
-    builtin cd ${dir}
-}
+# function cd() {
+#     builtin cd $1
+#     dir=$(pwd)
+#     [[ -n "$VIRTUAL_ENV" ]] && which deactivate &>/dev/null && deactivate
+#     while true; do
+#         [[ -d venv ]] && source venv/bin/activate && break
+#         [[ -d .venv ]] && source .venv/bin/activate && break
+#         [[ $(pwd) == "/" ]] && break
+#         builtin cd ..
+#     done
+#     builtin cd ${dir}
+# }
 
 ##########################################
 # git alias
