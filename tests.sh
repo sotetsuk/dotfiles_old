@@ -22,7 +22,6 @@ which pip3
 
 # Installed w/o package manager
 which fzf
-which poetry
 which imgcat
 which imgls
 which it2dl
