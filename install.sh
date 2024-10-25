@@ -48,7 +48,7 @@ fi
 
 # install packages using brew
 # xz is required to install clangd language server in vim-lsp-settings
-brew install tmux gh bat xz xsel tree
+brew install tmux gh bat xz xsel tree pygmentize inkscape
 
 echo "#############################################################################"
 echo "# Set dotfiles"
