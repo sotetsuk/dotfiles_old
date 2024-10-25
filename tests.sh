@@ -18,7 +18,6 @@ which xz
 which gh
 which xsel
 which pygmentize
-which inkscape
 
 # Installed w/o package manager
 which fzf

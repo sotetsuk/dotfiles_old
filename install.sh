@@ -50,10 +50,6 @@ fi
 # xz is required to install clangd language server in vim-lsp-settings
 brew install tmux gh bat xz xsel tree pygments wget
 
-# cask
-brew tap homebrew/cask
-brew install --cask inkscape 
-
 echo "#############################################################################"
 echo "# Set dotfiles"
 echo "#############################################################################"
