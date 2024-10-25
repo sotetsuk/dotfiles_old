@@ -35,7 +35,20 @@ echo "##########################################################################
 echo "# brew"
 echo "#############################################################################"
 
-./installers/install_brew.sh
+# install brew if not found
+if command -v brew 1>/dev/null 2>&1; then
+  echo "passed [brew]"
+else
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  if [[ -e "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  fi
+fi
+
+# install packages using brew
+# xz is required to install clangd language server in vim-lsp-settings
+brew install tmux gh bat xz xsel tree
 
 echo "#############################################################################"
 echo "# Set dotfiles"
