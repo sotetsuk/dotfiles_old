@@ -9,7 +9,7 @@ if [[ ! -e ~/.zshrc  ]]; then
   exit 1
 fi
 
-# install brew in not found
+# install brew if not found
 if command -v brew 1>/dev/null 2>&1; then
   echo "passed [brew]"
 else
@@ -27,5 +27,6 @@ brew install \
     bat	\
     xz \
     gh \
-    xsel
+    xsel \
+    tree
 
