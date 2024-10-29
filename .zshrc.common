@@ -70,6 +70,8 @@ alias gdiff="git diff"
 
 alias ic="imgcat"
 
+alias ai="aichat"
+
 ##########################################
 # Zsh hooks
 ##########################################

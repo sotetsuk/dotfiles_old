@@ -38,7 +38,7 @@ fi
 
 # install packages using brew
 # xz is required to install clangd language server in vim-lsp-settings
-brew install tmux gh bat xz xsel tree pygments wget
+brew install tmux gh bat xz xsel tree pygments wget aichat
 
 echo "#############################################################################"
 echo "# Set dotfiles"
