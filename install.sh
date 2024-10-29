@@ -127,3 +127,16 @@ for LANG_SERVER in "pylsp-all" "clangd"; do
   ~/.vim/plugged/vim-lsp-settings/installer/install-${LANG_SERVER}.sh &
 done
 wait
+
+
+echo "#############################################################################"
+echo "# nvim"
+echo "#############################################################################"
+
+if [[ -e ~/.config/nvim ]]; then
+  echo "passed [nvim]"
+else
+  mkdir -p ~/.config
+  ln -s $(pwd)/nvim ~/.config/nvim && echo "ok"
+fi
+nvim --headless "+Lazy sync" +qa 
