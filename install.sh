@@ -139,4 +139,5 @@ else
   mkdir -p ~/.config
   ln -s $(pwd)/nvim ~/.config/nvim && echo "ok"
 fi
-nvim --headless "+Lazy sync" +qa 
+git submodule update --init
+nvim +Lazy +qa
