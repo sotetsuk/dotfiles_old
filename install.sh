@@ -120,7 +120,7 @@ else
   mkdir -p ~/.config
   ln -s $(pwd)/nvim ~/.config/nvim && echo "ok"
 fi
-nvim +Lazy +qa
+nvim --headless +Lazy +qa
 
 echo "#############################################################################"
 echo "# vim-lsp"
