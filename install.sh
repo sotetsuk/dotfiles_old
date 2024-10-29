@@ -38,8 +38,9 @@ fi
 
 # install packages using brew
 # * xz is required to install clangd language server in vim-lsp-settings
-# * ripgrep is required for kickstart.nvim
-brew install tmux gh bat xz xsel tree pygments wget aichat neovim ripgrep
+# * ripgrep is required by kickstart.nvim
+# * node is required by copilot
+brew install tmux gh bat xz xsel tree pygments wget aichat neovim ripgrep node
 
 echo "#############################################################################"
 echo "# Set dotfiles"
