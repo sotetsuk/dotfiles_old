@@ -55,6 +55,7 @@ dotfiles="
 .local/bin/tmx
 .local/bin/tmux-git-curr-branch
 .local/bin/tmux-git-status
+.local/bin/p
 "
 
 mkdir -p ~/.local/bin
