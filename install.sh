@@ -127,7 +127,7 @@ echo "##########################################################################
 echo "# vim-lsp"
 echo "#############################################################################"
 
-vim -es +PlugInstall +qa
+vim -c ":PlugInstall" -c "qa!"
 
 mkdir -p ~/.local/share/vim-lsp-settings/servers
 for LANG_SERVER in "pylsp-all" "clangd"; do
