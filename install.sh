@@ -40,8 +40,7 @@ fi
 # * xz is required to install clangd language server in vim-lsp-settings
 # * ripgrep is required by kickstart.nvim
 # * node is required by copilot
-# * skim is a pdf viewer for vimtex
-brew install tmux gh bat xz xsel tree pygments wget aichat neovim ripgrep node skim
+brew install tmux gh bat xz xsel tree pygments wget aichat neovim ripgrep node
 
 echo "#############################################################################"
 echo "# Set dotfiles"
