@@ -73,6 +73,7 @@ alias ic="imgcat"
 alias ai="aichat"
 
 alias v="nvim"
+alias n="nvim"
 
 ##########################################
 # Zsh hooks
