@@ -3,6 +3,7 @@
 	email = koyamada-s@sys.i.kyoto-u.ac.jp
 [core]
 	editor = vi
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
 	sw = switch
 	br = branch
@@ -18,3 +19,16 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[interactive]
+	diffFilter = diff-so-fancy
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
