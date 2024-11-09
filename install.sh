@@ -117,12 +117,8 @@ echo "# nvim"
 echo "#############################################################################"
 
 git submodule update --init
-if [[ -e ~/.config/nvim ]]; then
-  echo "passed [nvim]"
-else
-  mkdir -p ~/.config
-  ln -s $(pwd)/nvim ~/.config/nvim && echo "ok"
-fi
+mkdir -p ~/.config
+ln -sfnv $(pwd)/nvim ~/.config/nvim && echo "ok"
 nvim --headless +Lazy +qa
 
 echo "#############################################################################"
