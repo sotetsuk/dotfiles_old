@@ -60,7 +60,7 @@ alias gco="git checkout"
 
 alias gst="git status"
 
-alias gcm="git commit -m"
+alias gcm="git safe-commit -m"
 
 alias gad="git add"
 alias gadd="git add"
